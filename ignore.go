@@ -1,5 +1,5 @@
-// Package ignore is used to ignore common nuisance errors.
-package ignore
+// Package ignore is used to ignore unimportant errors.
+package ignore // import "go.gophers.dev/pkgs/ignore"
 
 import (
 	"io"
