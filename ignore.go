@@ -16,3 +16,13 @@ func Drain(rc io.ReadCloser) {
 	_, _ = io.Copy(ioutil.Discard, rc)
 	Close(rc)
 }
+
+// A Rollbacker implements the Rollback method.
+type Rollbacker interface {
+	Rollback() error
+}
+
+// Rollback r and ignore the error.
+func Rollback(r Rollbacker) {
+	_ = r.Rollback()
+}
