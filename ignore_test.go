@@ -37,3 +37,17 @@ func Test_Drain(t *testing.T) {
 	frc := &fakeReadCloser{}
 	Drain(frc)
 }
+
+type fakeRollbacker struct {
+}
+
+func (r *fakeRollbacker) Rollback() error {
+	return errors.New("some error")
+}
+
+var _ Rollbacker = (*fakeRollbacker)(nil)
+
+func Test_Rollback(t *testing.T) {
+	fr := &fakeRollbacker{}
+	Rollback(fr)
+}
