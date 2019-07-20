@@ -1,3 +1,3 @@
-module go.gophers.dev/pkgs/ignore
+module gophers.dev/pkgs/ignore
 
 go 1.12
