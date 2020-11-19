@@ -26,3 +26,8 @@ type Rollbacker interface {
 func Rollback(r Rollbacker) {
 	_ = r.Rollback()
 }
+
+// Error will ignore the error
+func Error(_ error) {
+	// do nothing
+}
