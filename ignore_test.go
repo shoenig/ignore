@@ -51,3 +51,18 @@ func Test_Rollback(t *testing.T) {
 	fr := &fakeRollbacker{}
 	Rollback(fr)
 }
+
+func Test_Panic(t *testing.T) {
+	Panic(nil) // nothing happens
+
+	recovered := false
+	defer func() {
+		recover()
+		recovered = true
+	}()
+
+	Panic(errors.New("oops"))
+	if !recovered {
+		t.Fatal("expected to have recovered")
+	}
+}
