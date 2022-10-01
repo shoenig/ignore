@@ -3,15 +3,11 @@ ignore
 
 Ignore unimportant error values
 
-[![Go Report Card](https://goreportcard.com/badge/gophers.dev/pkgs/ignore)](https://goreportcard.com/report/gophers.dev/pkgs/ignore)
-[![Build Status](https://travis-ci.com/shoenig/ignore.svg?branch=master)](https://travis-ci.com/shoenig/ignore)
-[![GoDoc](https://godoc.org/gophers.dev/pkgs/ignore?status.svg)](https://godoc.org/gophers.dev/pkgs/ignore)
-![NetflixOSS Lifecycle](https://img.shields.io/osslifecycle/shoenig/ignore.svg)
 ![GitHub](https://img.shields.io/github/license/shoenig/ignore.svg)
 
 # Project Overview
 
-Module `gophers.dev/pkgs/ignore` provides a package with functions for ignoring
+Module `github.com/shoenig/ignore` provides a package with functions for ignoring
 unimportant error values. These are useful for indicating errors that do not matter,
 while also getting your IDE to stop highlighting ignored error returns.
 
@@ -19,7 +15,7 @@ while also getting your IDE to stop highlighting ignored error returns.
 
 The `ignore` package can be installed by running
 ```bash
-go get gophers.dev/pkgs/ignore
+go get github.com/shoenig/ignore
 ```
 
 #### Example Usage of ignore
@@ -40,9 +36,9 @@ ignore.Drain(reader)
 
 # Contributing
 
-The `gophers.dev/pkgs/ignore` module is always improving with new features
+The `github.com/shoenig/ignore` module is always improving with new features
 and error corrections. For contributing bug fixes and new features please file an issue.
 
 # License
 
-The `gophers.dev/pkgs/ignore` module is open source under the [BSD-3-Clause](LICENSE) license.
+The `github.com/shoenig/ignore` module is open source under the [BSD-3-Clause](LICENSE) license.
