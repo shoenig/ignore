@@ -1,3 +1,3 @@
-module gophers.dev/pkgs/ignore
+module github.com/shoenig/ignore
 
-go 1.12
+go 1.18
