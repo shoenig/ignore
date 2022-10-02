@@ -3,6 +3,7 @@ ignore
 
 Ignore unimportant error values
 
+[![Go Reference](https://pkg.go.dev/badge/github.com/shoenig/ignore.svg)](https://pkg.go.dev/github.com/shoenig/ignore)
 ![GitHub](https://img.shields.io/github/license/shoenig/ignore.svg)
 
 # Project Overview
